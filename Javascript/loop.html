@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Loops and Arrays</title>
 </head>
 <body>
+
+    <p id ="demo"></p> <!---parent-->
     <script>
 
-        for(let i=1; i<=10; i++){
-            document.write("<br> ABESEC")
+        const arr = ["a1", "a2", "a3", "a4"];
+        let l = arr.length;
+        let text = " ";
+        for(let i=0; i<l; i++){
+            
+            if (i==1){
+                continue;
+            }
+            
+            else{
+                text += arr[i]+"<br>";
+            }
+            
         }
+
+        document.getElementById("demo").innerHTML = text;
+
 
     </script>
 </body>
