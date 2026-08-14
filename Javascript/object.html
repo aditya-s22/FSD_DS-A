@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        //creating object
+        const student = {
+            name: "Aditya",
+            course: "B.Tech",
+            dept: "DS"
+        }
+
+        // document.write(student); // [object Object] -> object- datatype, Object- value
+
+        for (let x in student){
+            document.write(student[x]+"<br>");
+        }
+        
+
+        // document.write(student.name +"<br>");
+        // document.write(student.course + "<br>");
+        // document.write(student.dept);
+
+    </script>
+</body>
+</html>
