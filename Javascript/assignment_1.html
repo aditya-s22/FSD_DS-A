@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+
+    <style>
+        .container{
+            text-align: center;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Select</th>
+            </tr>
+            <tr>
+                <td>Tea</td>
+                <td>45</td>
+                <td><button onclick="buyProduct('Tea')">buy</button></td>
+            </tr>
+            <tr>
+                <td>Coffee</td>
+                <td>60</td>
+                <td><button onclick="buyProduct('Coffee')">buy</button></td>
+            </tr>
+            <tr>
+                <td>Sugar</td>
+                <td>70</td>
+                <td><button onclick="buyProduct('Sugar')">buy</button></td>
+            </tr>
+            <tr>
+                <td>Pulses</td>
+                <td>100</td>
+                <td><button onclick="buyProduct('Pulses')">buy</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        var product = {
+            Tea: 45,
+            Coffee: 60,
+            Sugar: 70,
+            Pulses: 100
+        }
+
+        function buyProduct(x) {
+            let y = prompt("Enter quantity: ");
+
+            if (product[x] !== undefined) {
+                document.write("Total Price = " + (y * product[x]) + "<br>");
+            }
+        }
+
+
+    </script>
+</body>
+</html>
