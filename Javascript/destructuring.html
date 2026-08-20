@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        const student ={
+            name: "Aditya",
+            branch: "DS",
+            roll: 21
+        }
+        // document.write(student.name);
+        // document.write(student.class);
+        // document.write(student.roll);
+
+        const {name, branch, roll} = student;
+        document.write(name +"<br>");
+        document.write(branch +"<br>");
+        document.write(roll);
+
+    </script>
+    
+</body>
+</html>
